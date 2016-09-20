@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jelentkezési űrlap</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="css/mystyle.css">
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <h1>Jelentkezési űrlap</h1>
+            
+            <fieldset>
+                <legend>Általános adatok</legend>
+                
+                <label for="txtName">Név:</label>
+                <input type="text" id="txtName" name="user_name">
+                
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+                
+                <label for="password">Jelszó:</label>
+                <input type="password" id="password" name="user_password">
+                
+                <label>Életkor:</label>
+                <input type="radio" 
+                       id="13_alatti"
+                       value="13_alatti"
+                       name="user_age">
+                <label for="13_alatti">13 életév alatt</label>
+                <input type="radio" 
+                       id="13_feletti"
+                       value="13_feletti"
+                       name="user_age">
+                <label for="13_feletti">13 életévtől vagy felette </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Profilod</legend>
+                
+                <label for="cv">Rövid leírás magadról:</label>
+                <textarea id="cv" name="user_cv"></textarea>
+                
+                <label for="job">Munkakör:</label>
+                <select id="job" name="user_job">
+                    <optgroup label="Web">
+                        <option>Front-end fejlesztő</option>
+                        <option>PHP fejlesztő</option>
+                        <option>Web dizájner</option>
+                    </optgroup>
+                    <optgroup label="Mobil">
+                        <option>Andriod fejlesztő</option>
+                        <option>iOS fejlesztő</option>
+                        <option>Mobil dizájner</option>
+                    </optgroup>
+                </select>
+                
+                <label>Érdeklődési kör</label>
+                <input type="checkbox"
+                       id="dev"
+                       value="dev"
+                       name="user_interest">
+                <label for="dev">Fejlesztés</label>
+                <br>
+                <input type="checkbox"
+                       id="design"
+                       value="design"
+                       name="user_interest">
+                <label for="design">Dizájn</label>
+                <br>
+                <input type="checkbox"
+                       id="sport"
+                       value="sport"
+                       name="user_interest">
+                <label for="sport">Sport</label>
+ 
+            </fieldset>
+            
+            <button type="submit">Jelentkezés</button>
+            
+        </form>
+    </body>
+</html>
